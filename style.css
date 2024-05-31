@@ -1,0 +1,469 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://img.freepik.com/free-photo/growth-economy-with-coins-concept_23-2148525276.jpg?t=st=1717168592~exp=1717172192~hmac=eb1026a1c2dc768f09f34c34e594d631e6813cec0fe28b5c3ce83ef66846212c&w=740);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navLogo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks ul li {
+    margin-left: 1rem;
+}
+
+.navLinks ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.navLinks ul li a:hover {
+    background: #e64a19;
+    border-radius: 5px;
+}
+
+.navBtn button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    background: #ff5722;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navBtn button:hover {
+    background: #e64a19;
+}
+
+/* Hero Section */
+.heroHeader {
+    text-align: center;
+    padding: 4rem 0;
+    background: url('/image/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+}
+
+.heroHeader:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(190, 188, 188, 0.084);
+    z-index: 0;
+}
+
+.heroHeader img {
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+.heroText h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    position: relative;
+}
+
+.heroInput {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    z-index: 1;
+    position: relative;
+}
+
+.heroInput input {
+    padding: 0.5rem;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.heroInput button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #ff5722;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background 0.3s;
+}
+
+.heroInput button:hover {
+    background: #e64a19;
+}
+
+/* Bottom Header */
+.bottomHeader {
+    text-align: center;
+    padding: 1rem 0;
+    background: #f4f4f4;
+}
+
+.cmpLogo ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.cmpLogo ul li {
+    margin: 0 0.5rem;
+}
+
+.cmpLogo ul li img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.cmpLogo ul li img:hover {
+    opacity: 1;
+}
+
+/* Products Section *//* Products Section */
+#products {
+    text-align: center;
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+
+#products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+#products .semiContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.CardsList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.CardContainer {
+    width: 30%;
+    background: #fff;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.CardContainer small {
+    display: block;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.CardContainer .image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    /* background-color: #e64a19; */
+}
+
+#products .CardContainer .image img {
+    width: 100%; /* Image width adjusted to fill the container */
+
+    border-radius: 5px;
+    background-color: aquamarine;
+    object-fit: cover;
+}
+
+.CardContainer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.CardContainer p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Developers Section *//* Developers Section */
+#developers {
+    text-align: center;
+    padding: 4rem 0;
+    background: #f4f4f4;
+}
+
+#developers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#developers p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.CardsList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.CardContainer {
+    width: 22%;
+    background: #fff;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#developers .CardContainer .image img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+.CardContainer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.CardContainer p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Use Cases Section *//* Use Cases Section */
+#usecase {
+    padding: 4rem 0;
+    text-align: center;
+    background: #fff;
+}
+
+#usecase h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#usecase p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftBox {
+    width: 50%;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.leftBox h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.leftBox ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leftBox ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.leftBox ul li:before {
+    content: "•";
+    color: #ff5722;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+.rightBox {
+    width: 45%;
+}
+
+.rightBox img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Company Section */
+#company {
+    padding: 4rem 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+#company h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.clientBox ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.clientBox ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin: 1rem;
+}
+
+.clientBox ul li img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.clientBox ul li img:hover {
+    transform: scale(1.1);
+}
+
+.clientBox ul li p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/* Pricing Section */
+/* Pricing Section */
+#pricing {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.priceBox {
+    width: 30%;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2rem;
+}
+
+.priceBox:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.priceBox h4 {
+    margin-bottom: 1rem;
+    color: #ff5722;
+}
+
+.priceBox p, .priceBox ul {
+    color: #555;
+    text-align: left;
+}
+
+.priceBox ul {
+    list-style: none;
+    padding: 0;
+}
+
+.priceBox ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.priceBox ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff5722;
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
